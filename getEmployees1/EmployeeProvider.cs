@@ -34,7 +34,7 @@ namespace getEmployees
                     item.TryGetValue("Emp_ID", out var EmpID);
                     item.TryGetValue("Emp_name", out var EmpName);
                     item.TryGetValue("Emp_location", out var EmpLocation);
-                    employees.Add(new Employee { EmpID = EmpID.S, EmpName = EmpName.S, EmpLocation = EmpLocation.S });
+                    employees.Add(new Employee { Emp_ID = EmpID.S, Emp_Name = EmpName.S, Emp_Location = EmpLocation.S });
 
                 }
                 return employees.ToArray();
@@ -63,9 +63,9 @@ namespace getEmployees
                 response.Items[0].TryGetValue("Emp_location", out var EmpLocation);
                 var employee = new Employee
                 {
-                    EmpID = EmpID.S,
-                    EmpName = EmpName.S,
-                    EmpLocation = EmpLocation.S
+                    Emp_ID = EmpID.S,
+                    Emp_Name = EmpName.S,
+                    Emp_Location = EmpLocation.S
                 };
                 return employee;
             }
@@ -100,9 +100,9 @@ namespace getEmployees
                     item.TryGetValue("Emp_location", out var EmpLocation);
                     var employee = new Employee
                     {
-                        EmpID = EmpID.S,
-                        EmpName = EmpName.S,
-                        EmpLocation = EmpLocation.S
+                        Emp_ID = EmpID.S,
+                        Emp_Name = EmpName.S,
+                        Emp_Location = EmpLocation.S
                     };
                     empResult.Add(employee);
                 }

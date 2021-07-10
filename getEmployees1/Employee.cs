@@ -6,8 +6,8 @@ namespace getEmployees
 {
     public class Employee
     {
-        public string EmpID { get; set; }
-        public string EmpName { get; set; }
-        public string EmpLocation { get; set; }
+        public string Emp_ID { get; set; }
+        public string Emp_Name { get; set; }
+        public string Emp_Location { get; set; }
     }
 }
